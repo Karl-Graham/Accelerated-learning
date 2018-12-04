@@ -38,7 +38,7 @@ namespace Module8._3
             string[] animalArray = animalsString.Split(',');
 
 
-            if (animalArray.Length == 1 && animalArray[0] == "")
+            if (string.IsNullOrWhiteSpace(animalsString))
                 throw new ArgumentException("Animal string don't contain any letters");
 
 
