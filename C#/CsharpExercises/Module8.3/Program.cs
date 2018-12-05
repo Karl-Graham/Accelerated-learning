@@ -27,7 +27,6 @@ namespace Module8._3
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine(ex.Message);
                     Console.ForegroundColor = ConsoleColor.Gray;
-
                 }
             } while (ok == false);
 
@@ -40,9 +39,6 @@ namespace Module8._3
 
             if (string.IsNullOrWhiteSpace(animalsString))
                 throw new ArgumentException("Animal string don't contain any letters");
-
-
-
 
             foreach (var item in animalArray)
             {
